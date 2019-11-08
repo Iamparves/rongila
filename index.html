@@ -23,8 +23,11 @@
     <link rel="stylesheet" href="css/grid.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Start Header Section -->
    <div class="fix full_wrapper header_bg">
         <header class="fix header" id="home">
             <nav class="navbar navbar-expand mainNav">
@@ -41,6 +44,21 @@
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
+                    <div class="mobile-menu">
+                        <span id="openNav"><i class="fa fa-align-justify"></i></span>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+                            <div class="overlay-content">
+                                <a id="mMBtn1" href="#home">Home</a>
+                                <a id="mMBtn2" href="#about">About</a>
+                                <a id="mMBtn3" href="#service">Service</a>
+                                <a id="mMBtn4" href="#resume">Resume</a>
+                                <a id="mMBtn5" href="#portfolio">Portfolio</a>
+                                <a id="mMBtn6" href="#blog">Blog</a>
+                                <a id="mMBtn7" href="#contact">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="container">
@@ -51,7 +69,7 @@
                         <h3>Freelance Web Designer</h3>
                         <h3>& Developer</h3>
                         <div class="hero_button">
-                            <button type="button"><a href="#">Hire</a></button>
+                            <button type="button"><a href="#contactz">Hire</a></button>
                         </div>
                     </div>
                     <div class="hero_photo fright">
@@ -66,9 +84,11 @@
             </div>
         </header>
    </div>
+   <!-- End Header Section -->
+   <!-- Start About Section -->
    <section class="fix full_wrapper about_me_bg">
        <div class="container" id="about">
-        <div class="fix about_me_section">
+        <div class="section fix about_me_section">
             <div class="section_hero">
                 <h2>About Me</h2>
                 <img src="img/shapdesign.png" alt="">
@@ -87,7 +107,6 @@
                             <li>Phone:</li>
                             <li>Date of Birth:</li>
                             <li>Nationality:</li>
-                            <li>Address:</li>
                         </ul>
                     </div>
                     <div class="piright fright">
@@ -97,19 +116,20 @@
                             <li>0586321470</li>
                             <li>21-Oct-1990</li>
                             <li>Bangladesh</li>
-                            <li>389/B West Rampura, Agrani midtown complex, Dhaka-1219.</li>
                         </ul>
                     </div>
                 </div>
-                <button type="button" class="hire_me"><a href="#">Hire Me</a></button>
+                <button type="button" class="hire_me"><a href="#contact">Hire Me</a></button>
                 <button type="button" class="download_cv"><a href="#">Download CV</a></button>
             </div>
         </div>
        </div>
    </section>
+   <!-- End About Section -->
+   <!-- Start Service Section -->
    <section class="fix full_wrapper service_bg">
        <div class="container" id="service">
-        <div class="fix service_section">
+        <div class="section fix service_section">
             <div class="section_hero">
                 <h2>Service</h2>
                 <img src="img/shapdesign.png" alt="">
@@ -149,9 +169,11 @@
         </div>
        </div>
    </section>
+   <!-- End Service Section -->
+   <!-- Start Work Section -->
    <section class="fix full_wrapper workr_bg">
        <div class="container">
-            <div class="fix work_ratings">
+            <div class="section fix work_ratings">
                 <div class="col span_1_of_4 wrbox">
                     <div class="icon">
                         <img src="img/happy_customers.png" alt="">
@@ -183,9 +205,11 @@
             </div>
        </div>
    </section>
+   <!-- End Work Section -->
+   <!-- Start Skill Section -->
    <section class="fix full_wrapper skill_bg">
        <div class="container">
-            <div class="fix skill_section">
+            <div class="section fix skill_section">
                 <div class="section_hero">
                     <h2>My Skills</h2>
                     <img src="img/shapdesign.png" alt="">
@@ -285,23 +309,27 @@
             </div>
        </div>
    </section>
+   <!-- End Skill Section -->
+   <!-- Start Hire Section -->
    <section class="fix full_wrapper hire_bg">
        <div class="container">
-            <div class="hire_section fix">
-                <div class="hire_text fleft">
+            <div class="section hire_section fix">
+                <div class="hire_text">
                     <h2>I'm Available</h2>
                     <h2>for Freelancer Projects!</h2>
                     <p>Tell me about your project story and project brief</p>
                 </div>
-                <div class="hire_button fright">
-                    <button><a href="#">Hire Me</a></button>
+                <div class="hire_button">
+                    <button><a href="#contact">Hire Me</a></button>
                 </div>
             </div>
        </div>
    </section>
+   <!-- End Hire Section -->
+   <!-- Start Resume Section -->
    <section class="fix full_wrapper resume_bg">
        <div class="container" id="resume">
-            <div class="resume_section fix">
+            <div class="section resume_section fix">
                 <div class="section_hero">
                     <h2>Resume</h2>
                     <img src="img/shapdesign.png" alt="">
@@ -357,9 +385,11 @@
             </div>
        </div>
    </section>
+   <!-- End Resume Section -->
+   <!-- Start Testimonial Section -->
    <section class="fix full_wrapper testimonial_bg">
        <div class="container">
-            <div class="fix testimonial_section">
+            <div class="fix section testimonial_section">
                 <div class="section_hero">
                     <h2>Testimonials</h2>
                     <img src="img/shapdesign.png" alt="">
@@ -408,9 +438,11 @@
             </div>
        </div>
    </section>
+   <!-- End Testimonial Section -->
+   <!-- Start Portfolio Section -->
    <section class="fix full_wrapper portfolio_bg">
        <div class="container" id="portfolio">
-            <div class="portfolio_section fix">
+            <div class="section portfolio_section fix">
                 <div class="section_hero">
                     <h2>Latest Projects</h2>
                     <img src="img/shapdesign.png" alt="">
@@ -447,9 +479,11 @@
             </div>
        </div>
    </section>
+   <!-- End Portfolio Section -->
+   <!-- Start Blog Section -->
    <section class="fix full_wrapper blog_bg">
        <div class="container" id="blog">
-        <div class="fix blog_section">
+        <div class="fix section blog_section">
             <div class="section_hero">
                 <h2>My Blog</h2>
                 <img src="img/shapdesign.png" alt="">
@@ -489,6 +523,8 @@
         </div>
        </div>
    </section>
+   <!-- End Blog Section -->
+   <!-- Start Contact Section -->
    <section class="fix full_wrapper contact_bg">
        <div class="container" id="contact">
         <div class="contact_section fix">
@@ -555,11 +591,13 @@
         </div>
        </div>
    </section>
+   <!-- End Contact Section -->
+   <!-- Start Footer Section -->
    <footer class="fix full_wrapper footer_bg">
        <div class="container">
         <div class="fix footer_section">
             <div class="left_area fleft">
-                <p>One Page Personal Protfolio Template By RapThame @ 2018</p>
+                <p>Copyright @ 2019</p>
             </div>
             <div class="right_area fright">
                 <ul>
@@ -573,6 +611,8 @@
         </div>
        </div>
     </footer>
+    <!-- End Footer Section -->
+
 
 
 

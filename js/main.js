@@ -1,12 +1,37 @@
-NProgress.start();
-NProgress.set(0.4);
-//Increment 
-var interval = setInterval(function() { NProgress.inc(); }, 1000);
-$(document).ready(function(){
-    NProgress.done();
-    clearInterval(interval);
-});
-$(document).ready(function(){
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//NProgress Start
+
+  NProgress.start();
+  NProgress.set(0.4);
+  //Increment 
+  var interval = setInterval(function() { NProgress.inc(); }, 1000);
+  $(document).ready(function(){
+      NProgress.done();
+      clearInterval(interval);
+  });
+
+//NProgress End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//Mobile Menu Start
+
+  $(document).ready(function(){
+    $("#openNav").click(function() {
+      $("#myNav").css("width", "100%")
+  });
+  $("#closeNav").click(function() {
+    $("#myNav").css("width", "0%")
+  });
+  $("#mMBtn1,#mMBtn2,#mMBtn3,#mMBtn4,#mMBtn5,#mMBtn6,#mMBtn7").click(function() {
+    $("#myNav").css("width", "0%")
+  });
+
+//Mobile Menu End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//Back To Top start
+
   $button = $.backToTop({
     // background color
     backgroundColor:'#34495e',
@@ -33,6 +58,12 @@ $(document).ready(function(){
     // z-index
     zIndex: 999
   });
+
+//Back To Top End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//Magnific Popup start
+
   $('.portfolio-item .item').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -55,7 +86,13 @@ $(document).ready(function(){
 				return element.find('img');
 			}
 		}
-	});
+  });
+
+//Magnific Popup End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//Isotope start
+
   // init Isotope
   var $grid = $('.portfolio-item').isotope({
   // options
@@ -69,65 +106,43 @@ $('.portfolio-menu ul li').on('click',function(){
   $('.portfolio-menu ul li').removeClass('mactive');
   $(this).addClass('mactive');
 })
+
+//Isotope End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+// Scroll Spy Start
+
   var spy = new Gumshoe('#mainNav a');
-    $(".testimonial-slider").slick({
-        autoplay: true,
-        autoplaySpeed: 1000,
-        dots: true,
-        infinite: false,
-        centerMode: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      });
-    var waypoint = new Waypoint({
-        element: document.getElementById('about'),
-        handler: function(direction) {
-          $('nav').toggleClass("sticky");
-        },
-        offset: 30
-      });
-    var config = document.querySelector('.latest_projects');
-    var mixer = mixitup(config);
+
+// Scroll Spy End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//Slick Slider Start
+
+  $(".testimonial-slider").slick({
+      autoplay: true,
+      autoplaySpeed: 1000,
+      dots: true,
+      infinite: false,
+      centerMode: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+
+//Slick Slider End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+//Waypoint Start
+
+  var waypoint = new Waypoint({
+      element: document.getElementById('about'),
+      handler: function(direction) {
+        $('nav').toggleClass("sticky");
+      },
+      offset: 30
+    });
+
+//Waypoint End
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 })
-
-/*
-var $button = $.backToTop({
-  // background color
-  backgroundColor:'#34495e',
-  // text color
-  color:'#FFFFFF',
-  // 'nonn', 'spin', 'fade', 'zoom', or 'spin-inverse'
-  effect:'spin',
-  // enable the back to top button
-  enabled: /height of the back to top button
-  height: 60,
-  width: 60,
-  // icon
-  icon:'fa fa-angle-double-up',
-  // margins
-  marginX: 30,
-  marginY: 50,
-  // bottom/top left/right
-  position:'bottom right',
-  // trigger position
-  pxToTrigger: 900,
-  // or 'fawesome'
-  theme:'default',
-  // z-index
-  zIndex: 999
-});
-
-*/
- 
-
-
-
-
-/* NProgress.start(); // start    
-NProgress.set(0.4); // To set a progress percentage, call .set(n), where n is a number between 0..1
-NProgress.inc(); // To increment the progress bar, just use .inc(). This increments it with a random amount. This will never get to 100%: use it for every image load (or similar).If you want to increment by a specific value, you can pass that as a parameter
-NProgress.configure({ ease: 'ease', speed: 500 }); // Adjust animation settings using easing (a CSS easing string) and speed (in ms). (default: ease and 200)
-NProgress.configure({trickleSpeed: 800 }); //Adjust how often to trickle/increment, in ms.
-NProgress.configure({ showSpinner: false });//Turn off loading spinner by setting it to false. (default: true)
-NProgress.configure({ parent: 'container' });//specify this to change the parent container. (default: body)
-NProgress.done(); // end */

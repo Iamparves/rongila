@@ -1,0 +1,553 @@
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+    .hero_text h2{
+        font-size: 50px;
+    }
+    .about_me_left{
+        margin-right: 2%;
+    }
+    .ctexts{
+        width: 200px;
+    }
+    .contact_form{
+        width: 720px;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1100px){
+    .about_me_left{
+        width: 300px;
+        height: 400px;
+    }
+    .about_me_right{
+        width: 60%;
+    }
+    .design_skill{
+        width: 45%;
+    }
+    .coding_skill{
+        width: 45%;
+    }
+    .education_section{
+        width: 45%;
+    }
+    .experience_section{
+        width: 45%;
+    }
+    .slider {
+        width: 60%;
+    }
+    .contact_form{
+        width: 65%;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px){
+    nav .menu li{
+        padding: 35px 10px;
+    }
+    .hero_photo{
+        display: none;
+    }
+    .hero_text{
+        position: absolute;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .hero_text h3:nth-child(2),
+    .hero_text h3:nth-child(3){
+        float: left;
+    }
+    .hero_text .hero_button{
+        margin-top: 20px;
+    }
+    .about_me_left{
+        width: 280px;
+        height: 390px;
+    }
+    .about_me_right .personal_info ul li{
+        font-size: 14px;
+    }
+    .contact_info{
+        display: none;
+    }
+    .contact_form{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .ssbox{
+        padding: 15px;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 892px){
+    #mainNav{
+        display: none;
+    }
+    .mobile-menu span{
+        display: block;
+    }
+    .hero_text h2{
+        font-size: 40px;
+    }
+    .next-section i{
+        font-size: 40px;
+    }
+    .about_me_left{
+        display: none;
+        float: none;
+    }
+    .about_me_right{
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .hire_button button{
+        padding: 13px 45px;
+    }
+    .resume_box{
+        height: 220px;
+    }
+    .slider {
+        width: 70%;
+    }
+    .blog_blogs{
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .blog_post{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .blog_post .thumbnail{
+        height: auto;
+    }
+    .ssbox .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .ssbox h3{
+        font-size: 16px;
+    }
+    .ssbox p{
+        font-size: 13px;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px){
+    .section{
+        padding: 80px 0;
+    }
+    .section_hero{
+        margin-bottom: 60px;
+    }
+    .hero_text{
+        width: 50%;
+        margin: 0 auto;
+        top: 40%;
+    }
+    .hero_text h2{
+        font-size: 30px;
+    }
+    .hero_text h3{
+        font-size: 15px;
+    }
+    .mobile-menu span{
+        font-size: 35px;
+        margin-top: 12px;
+    }
+    .hero_text h3:nth-child(2),
+    .hero_text h3:nth-child(3){
+        float: none;
+    }
+    .about_me_right{
+        width: 80%;
+    }
+    .about_me_right h3{
+        font-size: 18px;
+    }
+    .about_me_right h4{
+        font-size: 15px;
+    }
+    .hire_me{
+        padding: 10px 30px;
+        margin-right: 20px;
+    }
+    .hire_me a{
+        font-size: 18px;
+    }
+    .download_cv{
+        padding: 10px 20px;
+    }
+    .download_cv a{
+        font-size: 18px;
+    }
+    .about_me_right .personal_info ul li{
+        font-size: 13px;
+    }
+    .ssbox:first-child{
+        margin-left: 1%;
+    }
+    .ssbox{
+        margin: 0;
+        width: 48%;
+        margin: 1%;
+    }
+    .ssbox:nth-child(4){
+        margin-left: 1%;
+    }
+    .wrbox h2{
+        font-size: 25px;
+    }
+    .wrbox h3{
+        font-size: 15px;
+    }
+    .wrbox .icon{
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    .design_skill{
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+    .coding_skill{
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .hire_text h2{
+        font-size: 27px;
+        line-height: 140%;
+    }
+    .hire_text p{
+        font-size: 14px;
+    }
+    .hire_button button{
+        padding: 10px 30px;
+    }
+    .hire_button button a{
+        font-size: 18px;
+    }
+    .education_section{
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+    .experience_section{
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .resume_box{
+        height: auto;
+    }
+    .slider {
+        width: 90%;
+    }
+    .portfolio-menu ul li{
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .portfolio-item{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .portfolio-item .item{
+        width: 100%;
+        float: none;
+        margin: 15px auto;
+    }
+    .portfolio-menu{
+        margin-bottom: 30px;
+    }
+    .blog_blogs{
+        width: 90%;
+    }
+    form input[type="submit"]{
+        padding: 12px 20px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 600px){
+    .section{
+        padding: 70px 0;
+    }
+    .section_hero{
+        margin-bottom: 50px;
+    }
+    .hero_text .hero_button{
+        margin-top: 30px;
+    }
+    .hero_text .hero_button button{
+        padding: 10px 35px;
+    }
+    .hero_text .hero_button button a{
+        font-size: 18px;
+    }
+    .hero_text h2{
+        font-size: 25px;
+    }
+    .hero_text h3{
+        font-size: 13px;
+    }
+    .hire_me{
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+    .hire_me a{
+        font-size: 15px;
+    }
+    .about_me_right{
+        width: 90%;
+    }
+    .download_cv{
+        padding: 10px 12px;
+    }
+    .download_cv a{
+        font-size: 15px;
+    }
+    .ssbox:first-child{
+        margin-left: auto;
+    }
+    .ssbox:nth-child(4){
+        margin-left: auto;
+    }
+    .ssbox{
+        float: none;
+        width: 80%;
+        margin: 20px auto;
+    }
+    .workr_bg{
+        background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(../img/code.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    .wrbox:first-child{
+        margin-left: 1%;
+    }
+    .wrbox:nth-child(4){
+        margin-left: 1%;
+    }
+    .wrbox{
+        width: 48%;
+        margin: 20px 1%;
+    }
+    .skill_text h2{
+        font-size: 25px;
+    }
+    .skill_text p{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .hire_text{
+        float: none;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .hire_button{
+        float: none;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .hire_text h2{
+        font-size: 25px;
+    }
+    .hire_text p{
+        font-size: 14px;
+    }
+    .education_section{
+        width: 90%;
+    }
+    .experience_section{
+        width: 90%;
+    }
+    .resume_box p{
+        font-size: 14px;
+    }
+    .resume_box h3{
+        font-size: 18px;
+    }
+    .slider {
+        width: 100%;
+    }
+    .portfolio-item{
+        width: 90%;
+    }
+    .blog_post .content button{
+        padding: 10px 15px;
+        margin: 20px 0;
+    }
+    .blog_post .content button a{
+        font-size: 15px;
+    }
+    .footer_section .right_area ul li{
+        margin: 0 8px;
+    }
+    .footer_section .right_area ul li a{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 480px){
+    .section_hero h2{
+        font-size: 25px;
+    }
+    .hero_text{
+        width: 60%;
+        top: 40%;
+    }
+    .hero_text h2{
+        font-size: 20px;
+    }
+    .hero_text .hero_button{
+        margin-top: 20px;
+    }
+    .hero_text .hero_button button{
+        padding: 5px 20px;
+    }
+    .hero_text .hero_button button a{
+        font-size: 15px;
+    }
+    .about_me_right{
+        width: 98%;
+    }
+    .about_me_right h3{
+        font-size: 16px;
+    }
+    .about_me_right h4{
+        font-size: 13px;
+    }
+    .hire_me{
+        padding: 8px 20px;
+    }
+    .hire_me a{
+        font-size: 15px;
+    }
+    .download_cv{
+        padding: 8px 10px;
+    }
+    .download_cv a{
+        font-size: 15px;
+    }
+    .ssbox:first-child{
+        margin-left: auto;
+    }
+    .ssbox:nth-child(4){
+        margin-left: auto;
+    }
+    .ssbox{
+        width: 95%;
+    }
+    .design_skill{
+        width: 95%;
+    }
+    .coding_skill{
+        width: 95%;
+    }
+    .hire_text{
+        float: none;
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .hire_button{
+        float: none;
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .slider-outer{
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .slider-inner{
+        height: auto;
+    }
+    .portfolio-item{
+        width: 95%;
+    }
+    .portfolio-item .item{
+        margin: 8px auto;
+    }
+    .blog_blogs{
+        width: 95%;
+    }
+    .blog_post .content h2{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .blog_post .content p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .footer_section .left_area{
+        float: none;
+        text-align: center;
+    }
+    .footer_section .right_area{
+        float: none;
+        width: 200px;
+        margin: 20px auto 0;
+    }
+
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-width: 360px){
+    .overlay-content a{
+        font-size: 20px;
+     }
+    .wrbox:first-child{
+        margin-left: 10%;
+    }
+    .wrbox:nth-child(4){
+        margin-left: 10%;
+    }
+    .wrbox{
+        width: 80%;
+        margin: 30px 10%;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+@media only screen and (max-height: 500px){
+    .overlay-content a{
+        font-size: 20px;
+        padding: 10px;
+     }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */

@@ -8,6 +8,9 @@
 #nprogress .bar{
     background: #FE7E11;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -19,9 +22,6 @@
 body {
     position: relative;
   }
-html{
-    scroll-behavior: smooth;
-}
 p{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -48,6 +48,9 @@ img{
     width: 1170px;
     margin: 0 auto;
 }
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Header Style */
 .header_bg{
     background: #fafafa;
 }
@@ -64,10 +67,7 @@ img{
 header{
     height: 100vh;
 }
-nav{
-    height: 100px;
-    border-bottom: 1px solid #ddd;
-}
+
 nav .menu {
     list-style: none;
 }
@@ -104,7 +104,67 @@ nav .menu a:hover{
 .sticky .menu li{
     padding: 25px 15px;
 }
+.mobile-menu span{
+	color: #FE7E11;
+	font-size: 40px;
+	float: right;
+	margin-top: 10px;
+    display: none;
+}
+.mobile-menu #openNav{
+    transition: 0s;
+}
+.mobile-menu #openNav:hover{
+    cursor: pointer;
+    color: #2c3e50;
+}
+.overlay{
+    width: 0%;
+    height: 100%;
+    position: fixed;
+	top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+	z-index: 999;
+	overflow-x: hidden;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s
+}
+.overlay .closebtn{
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 70px;
+    top: 0;
+    right: 15px;
+    position: absolute;
+    transition: all .2s;
+}
+.overlay .closebtn:hover{
+    color: #FE7E11;
+    font-size: 80px;
+}
+.overlay-content{
+    position: relative;
+    top: 15%;
+}
+.overlay-content a{
+   color: rgba(255, 255, 255, 0.95);
+   font-family: Montserrat;
+   text-transform: uppercase;
+   font-weight: 500;
+   display: block;
+   font-size: 25px;
+   padding: 15px;
+   text-align: center;
+   letter-spacing: 1.5px;
+   transition: .2s;
+}
+.overlay-content a:hover{
+    color: #FE7E11;
+    letter-spacing: 5px;
+}
 .header_bottom{
+    margin-top: 100px;
     height: 90vh;
     position: relative;
 }
@@ -192,6 +252,11 @@ nav .menu a:hover{
 .next-section i:hover{
     color: #2c3e50;
 }
+/* End Header Style */
+/* --------------------------------------------------------------------------------- */
+.section{
+    padding: 110px 0;
+}
 .section_hero{
     text-align: center;
     margin-bottom: 100px;
@@ -201,11 +266,10 @@ nav .menu a:hover{
     font-size: 36px;
     color: #666666;
 }
+/* --------------------------------------------------------------------------------- */
+/* Start About Style */
 .about_me_bg{
     background: #F0F0F0;
-}
-.about_me_section{
-    padding: 110px 0;
 }
 .about_me_left{
     width: 360px;
@@ -227,7 +291,6 @@ nav .menu a:hover{
     right: 0;
     margin: 0 auto;
 }
-
 .about_me_left:hover img{
     width: 95%;
 }
@@ -288,7 +351,7 @@ nav .menu a:hover{
 }
 .download_cv a{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #666;
     transition: .2s;
 }
@@ -299,11 +362,12 @@ nav .menu a:hover{
 .download_cv:hover a{
     color: #fff;
 }
+/* End About Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Service Style */
 .service_bg{
     background: #FAFAFA;
-}
-.service_section{
-    padding: 110px 0;
 }
 .ssbox{
     background: #EEEEEE;
@@ -335,10 +399,12 @@ nav .menu a:hover{
     color: #666;
     margin: 10px auto;
     font-family: lato;
+    font-size: 18px;
 }
 .ssbox p{
     color: #747474;
     margin: 10px auto;
+    font-size: 16px;
 }
 .wdn{
     background: url(../img/wdn.png);
@@ -382,14 +448,15 @@ nav .menu a:hover{
     background-position: center center;
     background-size: 22px 22px;
 }
+/* End Service Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Work Style */
 .workr_bg{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/code.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-}
-.work_ratings{
-    padding: 110px 0;
 }
 .wrbox{
     text-align: center;
@@ -405,11 +472,10 @@ nav .menu a:hover{
     color: #fff;
     font-size: 18px;
 }
+/* End Work Style */
+/* Start Skill Style */
 .skill_bg{
     background: #FAFAFA;
-}
-.skill_section{
-    padding: 110px 0;
 }
 .design_skill{
     width: 470px;
@@ -490,16 +556,18 @@ nav .menu a:hover{
 .mlearninh .inner_bar{
     width: 84%;
 }
+/* End Skill Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Hire Style */
 .hire_bg{
     background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.5)),url(../img/available.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 }
-.hire_section{
-    padding: 110px 0;
-    width: 870px;
-    margin: 0 auto;
+.hire_text{
+    float: left;
 }
 .hire_text h2{
     color: #FE7E11;
@@ -512,6 +580,9 @@ nav .menu a:hover{
     color: #fff;
     font-size: 17px;
     letter-spacing: .5px;
+}
+.hire_button{
+    float: right;
 }
 .hire_button button{
     background: #FE7E11;
@@ -534,11 +605,12 @@ nav .menu a:hover{
     background: transparent;
     border: 2px solid #fff;
 }
+/* End Hire Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Resume Style */
 .resume_bg{
     background: #FAFAFA;
-}
-.resume_section{
-    padding: 110px 0;
 }
 .education_section{
     width: 480px;
@@ -594,11 +666,12 @@ nav .menu a:hover{
 .resume_box p:last-child{
     line-height: 150%;;
 }
+/* End Resume Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Testimonial Style */
 .testimonial_bg{
     background: #F0F0F0;
-}
-.testimonial_section{
-    padding: 110px 0;
 }
 .slider {
     width: 50%;
@@ -699,11 +772,12 @@ nav .menu a:hover{
     opacity: 1;
     background: #FE7E11;
 }
+/* End Testimonial Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Portfolio Style */
 .portfolio_bg{
     background: #FAFAFA;
-}
-.portfolio_section{
-    padding: 110px 0;
 }
 .portfolio-menu{
     margin-bottom: 60px;
@@ -744,11 +818,12 @@ nav .menu a:hover{
 .image-source-link{
     display: none;
 }
+/* End Portfolio Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Blog Style */
 .blog_bg{
     background: #F0F0F0;
-}
-.blog_section{
-    padding: 110px 0;
 }
 .blog_post{
     background: #E2E2E2;
@@ -806,11 +881,12 @@ nav .menu a:hover{
 .blog_post:hover .content button a{
     color: #fff;
 }
+/* End Blog Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Contact Style */
 .contact_bg{
     background: #FAFAFA;
-}
-.contact_section{
-    padding: 110px 0;
 }
 .cicons{
     width: 100px;
@@ -912,6 +988,10 @@ form input[type="submit"]:hover{
     background: transparent;
     border: 2px solid #666;
 }
+/* End Contact Style */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* Start Footer Style */
 .footer_bg{
     background: #F0F0F0;
 }
@@ -966,3 +1046,5 @@ form input[type="submit"]:hover{
 .pinterest:hover{
     background: url(../img/pinterest1.png);
 }
+/* End Footer Style */
+/* --------------------------------------------------------------------------------- */
