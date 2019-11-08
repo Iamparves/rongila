@@ -808,12 +808,15 @@ nav .menu a:hover{
 .portfolio-item .item{
     display: block;
     width: 31%;
+    height: auto;
     float: left;
     margin: 0 1% 20px;
+    overflow: hidden;
 }
 .portfolio-item .item img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: hidden;
 }
 .image-source-link{
     display: none;
