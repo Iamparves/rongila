@@ -42,8 +42,8 @@
     // enable the back to top button
     enabled: true, 
     //height of the back to top button
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     // icon
     icon:'fa fa-angle-double-up',
     // margins
